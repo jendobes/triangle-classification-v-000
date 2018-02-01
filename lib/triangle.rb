@@ -8,5 +8,7 @@ class Triangle
     :equilateral
     :isosceles
     :scalene
+    if type is invalid
+    raise TriangleError
   end
 end
