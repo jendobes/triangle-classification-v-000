@@ -8,7 +8,7 @@ attr_reader :a, :b, :c
   end
 
   def kind
-    if ength1 + length2 > length3 && a > 0 && b > 0 && c > 0
+    if a + b > c && a > 0 && b > 0 && c > 0
       false
       raise TriangleError
     elsif a == b && b == c
