@@ -10,7 +10,7 @@ attr_reader :a, :b, :c
   end
 
   def kind
-    self.validate_triangle
+    validate_triangle
     elsif a == b && b == c
     :equilateral
   elsif a == b || b == c || c == a
