@@ -5,10 +5,11 @@ class Triangle
   end
 
   def kind
+    if
     :equilateral
     :isosceles
     :scalene
-    if type is invalid
+    if length1 + length2 !> length3
     raise TriangleError
   end
   end
