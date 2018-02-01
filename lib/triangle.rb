@@ -8,7 +8,7 @@ attr_reader :a, :b, :c
   end
 
   def kind
-    if a + b > c && a > 0 && b > 0 && c > 0
+    if self.validate_triangle
       false
       raise TriangleError
     elsif a == b && b == c
@@ -20,6 +20,11 @@ attr_reader :a, :b, :c
   end
   end
 
+end
+
+
+def validate_triangle
+  a + b > c && b + c > a && a + c > b && a > 0 && b > 0 && c > 0
 end
 
 
