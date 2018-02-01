@@ -5,8 +5,8 @@ class Triangle
   end
 
   def kind
-    if
-    :equilateral
+    if length1 == length2 == length3
+    return :equilateral
     :isosceles
     :scalene
     if length1 + length2 !> length3
