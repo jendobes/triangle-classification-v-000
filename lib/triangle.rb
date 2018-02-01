@@ -1,12 +1,12 @@
 class Triangle
   # write code here
-attr_reader :length1, :length2, :length3
-  def initialize(length1, length2, length3)
+attr_reader :a, :b, :c
+  def initialize(a, b, c)
   end
 
   def kind
-    if length1 == length2 == length3
-    return :equilateral
+    if a == b == c
+    :equilateral
   elsif
     :isosceles
     :scalene
