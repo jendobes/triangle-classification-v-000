@@ -11,14 +11,14 @@ attr_reader :a, :b, :c
 
   def kind
     if self.validate_triangle
-      false
+      true
       raise TriangleError
     elsif a == b && b == c
     :equilateral
   elsif a == b || b == c || c == a
     :isosceles
   else self.validate_triangle
-    true
+    false
     :scalene
   end
   end
