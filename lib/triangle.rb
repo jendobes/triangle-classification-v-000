@@ -14,7 +14,8 @@ attr_reader :a, :b, :c
     :isosceles
   elsif
     :scalene
-  elsif length1 + length2 !> length3 && a > 0 && b > 0 && c > 0
+  elsif length1 + length2 > length3 && a > 0 && b > 0 && c > 0
+    false
     raise TriangleError
   end
   end
