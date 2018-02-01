@@ -7,9 +7,10 @@ class Triangle
   def kind
     if length1 == length2 == length3
     return :equilateral
+  elsif
     :isosceles
     :scalene
-    if length1 + length2 !> length3
+  elsif length1 + length2 !> length3
     raise TriangleError
   end
   end
