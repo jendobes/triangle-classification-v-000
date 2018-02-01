@@ -8,7 +8,8 @@ attr_reader :a, :b, :c
   end
 
   def kind
-    if a == b && b == c
+    if
+    elsif a == b && b == c
     :equilateral
   elsif a == b || b == c || c == a
     :isosceles
