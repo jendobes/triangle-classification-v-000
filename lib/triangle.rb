@@ -18,7 +18,7 @@ attr_reader :a, :b, :c
   elsif a == b || b == c || c == a
     :isosceles
   else self.validate_triangle
-    false
+    true
     :scalene
   end
   end
