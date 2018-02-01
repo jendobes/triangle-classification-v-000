@@ -35,8 +35,3 @@ end
 
 class TriangleError < StandardError
 end
-
-good = Triangle.new(2, 2, 2)
-bad = Triangle.new(7, 3, 2)
-
-binding.pry
