@@ -14,3 +14,4 @@ class Triangle
 end
 
 triangle = Triangle.new(7, 3, 2)
+triangle.validate_triangle
