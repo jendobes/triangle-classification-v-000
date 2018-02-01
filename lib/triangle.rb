@@ -11,4 +11,5 @@ class Triangle
     if type is invalid
     raise TriangleError
   end
+  end
 end
