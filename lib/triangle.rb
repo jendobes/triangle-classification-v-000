@@ -8,16 +8,15 @@ attr_reader :a, :b, :c
   end
 
   def kind
-    if
+    if ength1 + length2 > length3 && a > 0 && b > 0 && c > 0
+      false
+      raise TriangleError
     elsif a == b && b == c
     :equilateral
   elsif a == b || b == c || c == a
     :isosceles
-  elsif
+  else
     :scalene
-  else length1 + length2 > length3 && a > 0 && b > 0 && c > 0
-    false
-    raise TriangleError
   end
   end
 
