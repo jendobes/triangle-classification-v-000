@@ -12,3 +12,5 @@ class Triangle
   end
 
 end
+
+triangle = Triangle.new(7, 3, 2)
