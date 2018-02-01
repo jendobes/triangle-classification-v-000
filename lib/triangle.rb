@@ -11,7 +11,7 @@ attr_reader :a, :b, :c
 
   def kind
     validate_triangle
-    elsif a == b && b == c
+  if a == b && b == c
     :equilateral
   elsif a == b || b == c || c == a
     :isosceles
