@@ -7,7 +7,7 @@ attr_reader :a, :b, :c
   def kind
     if a == b == c
     :equilateral
-  elsif
+  elsif a == b || b == c || c == a
     :isosceles
     :scalene
   elsif length1 + length2 !> length3
