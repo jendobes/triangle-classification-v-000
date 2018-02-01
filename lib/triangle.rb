@@ -10,7 +10,7 @@ attr_reader :a, :b, :c
   end
 
   def kind
-    if validate_triangle == false
+    if validate_triangle == nil
       raise TriangleError
   elsif a == b && b == c
     :equilateral
